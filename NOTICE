@@ -1,0 +1,11 @@
+Hanzo actions-proto-go
+Copyright 2026 Hanzo AI, Inc.
+
+This product is a fork of actions-proto-go
+(https://gitea.com/gitea/actions-proto-go), Copyright (c) 2022 The Gitea
+Authors, licensed under the MIT License (see LICENSE).
+
+Modifications by Hanzo AI, Inc.:
+  - Go module import path rebranded to git.hanzo.ai/hanzoai/actions-proto-go.
+  - On-the-wire protobuf package identities (runner.v1, ping.v1) preserved
+    unchanged for protocol compatibility with the Hanzo Git server.
