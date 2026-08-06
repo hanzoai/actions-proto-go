@@ -1,0 +1,16 @@
+# Canonical CI/CD config for hanzoai/actions-proto-go — read by the hanzoai/ci
+# reusable (.hanzo/workflows/cicd.yml) and by platform.hanzo.ai.
+#
+# A Go library of generated protobuf/connect stubs (ping/v1, runner/v1): ships
+# from a tag as a module, builds no image, so no `images:` and no `deploy:`.
+#
+# No `go test` gate, deliberately — this repo has no _test.go and asserting one
+# would be a green over nothing. Generated code fails by not COMPILING (a
+# regenerate against a changed .proto, a protobuf runtime bump that moves an
+# API), so compile + vet is the gate that can actually go red here.
+
+test:
+  - name: build
+    run: go build ./...
+  - name: vet
+    run: go vet ./...
