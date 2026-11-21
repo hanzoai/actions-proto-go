@@ -1,5 +1,7 @@
 # actions-proto-go
 
+[![Open in Hanzo](https://hanzo.app/badges/open-in-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/hanzoai/actions-proto-go&ref=main&action=open) [![Edit with Hanzo](https://hanzo.app/badges/edit-with-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/hanzoai/actions-proto-go&ref=main&action=edit) [![Deploy with Hanzo](https://hanzo.app/badges/deploy-with-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/hanzoai/actions-proto-go&ref=main&action=deploy)
+
 The wire protocol for **Hanzo Git Actions** — the protobuf /
 [connect](https://connectrpc.com) contract spoken between the Hanzo Git runner
 (`git-runner`) and the Hanzo Git server at `git.hanzo.ai`.
